@@ -13,6 +13,8 @@ set hidden
 set showcmd
 " クリップボードと連携する"
 set clipboard+=unnamed
+" visual bellを無効化する"
+set visualbell t_vb=
 
 " 見た目系
 " 行番号を表示

@@ -1,5 +1,7 @@
 "*":
   "activate-power-mode":
+    comboMode:
+      streakTimeout: 5
     playAudio:
       audioclip: "../audioclips/typewriter.wav"
     plugins:
