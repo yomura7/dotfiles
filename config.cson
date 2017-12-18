@@ -41,14 +41,20 @@
       "atom-material-syntax"
     ]
   editor:
-    fontSize: 12
+    fontSize: 11
     showInvisibles: true
   "exception-reporting":
     userId: "4fffcc10-739c-442e-b915-95a3f058d542"
+  "linter-flake8":
+    executablePath: "/Users/yomura/.pyenv/shims/flake8"
   "markdown-preview":
     useGitHubStyle: true
   "project-manager":
     alwaysOpenInSameWindow: true
+  "toggle-packages":
+    togglePackages: [
+      "vim-mode"
+    ]
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:
