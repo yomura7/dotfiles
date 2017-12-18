@@ -51,6 +51,9 @@
     useGitHubStyle: true
   "project-manager":
     alwaysOpenInSameWindow: true
+  runner:
+    scopes:
+      python: "/Users/yomura/.pyenv/shims/python"
   "toggle-packages":
     togglePackages: [
       "vim-mode"
