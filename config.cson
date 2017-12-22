@@ -27,6 +27,7 @@
     closeDeletedFileTabs: true
     disabledPackages: [
       "vim-mode"
+      "tool-bar-markdown-writer"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -41,7 +42,7 @@
       "atom-material-syntax"
     ]
   editor:
-    fontSize: 11
+    fontSize: 12
     showInvisibles: true
   "exception-reporting":
     userId: "4fffcc10-739c-442e-b915-95a3f058d542"
@@ -57,6 +58,8 @@
   "toggle-packages":
     togglePackages: [
       "vim-mode"
+      "activate-power-mode"
+      "tool-bar-markdown-writer"
     ]
   "tree-view":
     hideVcsIgnoredFiles: true
