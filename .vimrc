@@ -15,6 +15,19 @@ set showcmd
 set clipboard+=unnamed
 " visual bellを無効化する"
 set visualbell t_vb=
+" x キー削除でデフォルトレジスタに入れない
+noremap x "_x
+" Ctrl-jでESC
+noremap! <C-j> <esc>
+vnoremap <C-j> <esc>
+noremap <C-j> <S-j>
+noremap <C-k> <S-k>
+
+" 移動系"
+noremap <S-h> ^
+noremap <S-j> 5j
+noremap <S-k> 5k
+noremap <S-l> $
 
 " 見た目系
 " 行番号を表示
@@ -70,9 +83,4 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
-
-noremap! <C-j> <esc>
-vnoremap <C-j> <esc>
-noremap <S-h> ^
-noremap <S-l> $
 
