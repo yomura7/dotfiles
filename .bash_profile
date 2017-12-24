@@ -3,10 +3,13 @@ function parse_git_branch {
 } 
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-export PS1="\n\[\e[1;32m\]\t \[\e[1;33m\][\w] \[\e[1;34m\]\$(parse_git_branch)\n\[\e[1;37m\]\h:\u\\$ \[\e[0m\]"
+export PS1="\[\e[1;32m\]\t \[\e[1;33m\][\w] \[\e[1;34m\]\$(parse_git_branch)\n\[\e[1;37m\]\h:\u\\$ \[\e[0m\]"
 export PATH=$PATH:$HOME/.nodebrew/current/bin
 export PATH=$PATH:/Users/yomura/Library/Android/sdk/platform-tools
+
+if [ -f ~/.bashrc ] ; then
 source ~/.bashrc
+fi
 
 # pyenv
 eval export PATH="/Users/yomura/.pyenv/shims:${PATH}"
