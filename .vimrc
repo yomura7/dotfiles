@@ -11,17 +11,32 @@ set autoread
 set hidden
 " 入力中のコマンドをステータスに表示する
 set showcmd
+" exモード無効
+nnoremap Q <Nop>
+" Ctrl-jでESC
+noremap! <C-j> <esc>
+vnoremap <C-j> <esc>
+noremap <C-j> <S-j>
+noremap <C-k> <S-k>
+" コロンとセミコロンを入れ替える
+noremap ; :
+noremap : ;
+" ノーマルモードで改行
+noremap <CR> a<CR><esc>
+
+" yank系
 " クリップボードと連携する"
 set clipboard+=unnamed
 " visual bellを無効化する"
 set visualbell t_vb=
 " x キー削除でデフォルトレジスタに入れない
 noremap x "_x
-" Ctrl-jでESC
-noremap! <C-j> <esc>
-vnoremap <C-j> <esc>
-noremap <C-j> <S-j>
-noremap <C-k> <S-k>
+noremap X "_X
+" s キー削除でデフォルトレジスタに入れない
+noremap s "_s
+noremap S "_S
+" Yで行末までyank
+nnoremap Y y$
 
 " 移動系"
 noremap <S-h> ^
@@ -32,6 +47,8 @@ noremap <S-l> $
 " 見た目系
 " 行番号を表示
 set number
+" カーソルの位置を表示
+set ruler
 " 現在の行を強調表示
 set cursorline
 " 行末の1文字先までカーソルを移動できるように
