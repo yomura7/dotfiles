@@ -14,15 +14,20 @@ set showcmd
 " exモード無効
 nnoremap Q <Nop>
 " Ctrl-jでESC
-noremap! <C-j> <esc>
-vnoremap <C-j> <esc>
-noremap <C-j> <S-j>
-noremap <C-k> <S-k>
+noremap <C-k> <S-j>
+noremap <C-j> <esc>
+cnoremap <C-j> <esc>
+inoremap <C-j> <esc>
 " コロンとセミコロンを入れ替える
 noremap ; :
 noremap : ;
 " ノーマルモードで改行
 noremap <CR> a<CR><esc>
+" +/-でインクリメント/デクリメント
+nnoremap + <C-a>
+nnoremap - <C-x>
+" mで対応する括弧に移動する
+noremap m  %
 
 " yank系
 " クリップボードと連携する"
@@ -31,8 +36,7 @@ set clipboard+=unnamed
 set visualbell t_vb=
 " x キー削除でデフォルトレジスタに入れない
 noremap x "_x
-noremap X "_X
-" s キー削除でデフォルトレジスタに入れない
+noremap X "_X " s キー削除でデフォルトレジスタに入れない
 noremap s "_s
 noremap S "_S
 " Yで行末までyank
