@@ -13,14 +13,6 @@ set hidden
 set showcmd
 " exモード無効
 nnoremap Q <Nop>
-" Ctrl-jでESC
-noremap <C-k> <S-j>
-noremap <C-j> <esc>
-cnoremap <C-j> <esc>
-inoremap <C-j> <esc>
-" コロンとセミコロンを入れ替える
-noremap ; :
-noremap : ;
 " ノーマルモードで改行
 noremap <CR> a<CR><esc>
 " +/-でインクリメント/デクリメント
@@ -104,4 +96,6 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
-
+" iTerm2でカーソルの形状を変える
+let &t_SI = "\e]50;CursorShape=1\x7"
+let &t_EI = "\e]50;CursorShape=0\x7"

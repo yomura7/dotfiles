@@ -18,9 +18,6 @@ noremap <C-k> <S-j>
 noremap <C-j> <esc>
 cnoremap <C-j> <esc>
 inoremap <C-j> <esc>
-" コロンとセミコロンを入れ替える
-noremap ; :
-noremap : ;
 " ノーマルモードで改行
 noremap <CR> a<CR><esc>
 " +/-でインクリメント/デクリメント
