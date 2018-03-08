@@ -1,8 +1,25 @@
+export LSCOLORS=cxfxcxdxbxegedabagacad
 
-alias ll='ls -al' 
+function findf() {
+  echo $1
+  find . -type f -name "*$1*"
+}
+function cdls()
+{
+    \cd "$@" && ls
+}
+
+alias cd="cdls"
+alias bd="cd ../"
+alias ls='ls -G'
+alias ll='ls -G -l -a'
 alias vimrc='vim ~/dotfiles/.vimrc' 
 alias bashrc='vim ~/dotfiles/.bashrc' 
-alias sourceb='source ~/.bash_profile' 
+alias sb='source ~/.bash_profile' 
+alias oa='open -a atom'
+alias server='python -m http.server 3000'
+alias sushi='sh ~/script/sushi.sh'
+alias hoge='find . -type f -name "$1"'
 
 command pyenv rehash 2>/dev/null
 pyenv() {

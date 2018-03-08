@@ -33,6 +33,7 @@ noremap s "_s
 noremap S "_S
 " Yで行末までyank
 nnoremap Y y$
+nnoremap <C-p> "0p
 
 " 移動系"
 noremap <S-h> ^
@@ -99,3 +100,4 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " iTerm2でカーソルの形状を変える
 let &t_SI = "\e]50;CursorShape=1\x7"
 let &t_EI = "\e]50;CursorShape=0\x7"
+
