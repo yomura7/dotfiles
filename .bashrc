@@ -19,7 +19,6 @@ alias sb='source ~/.bash_profile'
 alias oa='open -a atom'
 alias server='python -m http.server 3000'
 alias sushi='sh ~/script/sushi.sh'
-alias hoge='find . -type f -name "$1"'
 
 command pyenv rehash 2>/dev/null
 pyenv() {
