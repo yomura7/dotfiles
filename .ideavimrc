@@ -38,6 +38,8 @@ noremap s "_s
 noremap S "_S
 " Yで行末までyank
 nnoremap Y y$
+" 0レジスタをペースト"
+nnoremap <C-p> "0p
 
 " 移動系"
 noremap <S-h> ^
